@@ -196,17 +196,49 @@ p {
 }
 
 #border {
-  height: 50px;
+  /* height: 50px; */
   width: 100%;
   background: #fff;
   display: block;
 }
 
+@media (max-width: 1120px) {
+  #border {
+    height: 20px;
+  }
+}
+
+@media (max-width: 849px) {
+  #border {
+    height: 50px;
+  }
+}
+
+@media (max-width: 730px) and (min-width: 447px) {
+  #border {
+    height: 90px;
+  }
+}
+
+@media (max-width: 390px) {
+  #border {
+    height: 140px;
+  }
+}
+
+@media (max-width: 304px) {
+  #border {
+    height: 210px;
+  }
+}
 #mid {
-  /* !responsive : margin-top 15% & remove porder change*/
-  margin: 9% auto 3%;
+  margin: 15% auto 3%;
   display: block;
   text-align: center;
+}
+
+#mid p {
+  color: #000;
 }
 
 #mid h3 {
@@ -226,10 +258,10 @@ p {
   display: block;
   text-align: center;
 }
-.head p{
+.head p {
   color: black;
-  }
-.head h1 strong{
+}
+.head h1 strong {
   font-family: "Roboto", sans-serif;
   font-size: 110%;
 }
